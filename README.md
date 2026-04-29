@@ -87,7 +87,6 @@ python3 main.py
 | ocr.py | Camera capture via OpenCV |
 | speak.py | Text to speech via espeak-ng |
 | config.py | Shared settings and paths |
-| evaluate.py | Custom evaluation script |
 
 ## Notes
 - GPU (gemma3) and CPU (Whisper) run on separate hardware due to Jetson NvMap memory constraint
