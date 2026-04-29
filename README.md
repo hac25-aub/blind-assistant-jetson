@@ -19,18 +19,21 @@ The system responds to natural voice commands like:
 |-------|------|------|----------|
 | gemma3:4b | 3.3GB | Vision + OCR + Text QA | GPU via Ollama |
 | Whisper small | 500MB | Speech to text | CPU |
-| espeak-ng | ~4MB | Text to speech | CPU |## Pipeline
+| espeak-ng | ~4MB | Text to speech | CPU |
+
+## Pipeline
+
 Voice command (mic)
-↓
+→
 Whisper small (speech → text) [CPU]
-↓
+→
 gemma3:4b: "Does this need a camera?" [GPU]
-↓
+→
 YES → Camera capture → gemma3:4b vision query [GPU]
 NO  → gemma3:4b text query [GPU]
-↓
+→
 espeak-ng (text → speech) [CPU]
-↓
+→
 USB headset speaker
 
 ## Setup Instructions
