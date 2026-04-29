@@ -1,0 +1,32 @@
+# Captured images
+captures/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+venv/
+*_env/
+
+# Logs
+logs/
+*.log
+
+# Temp files
+/tmp/
+*.wav
+
+# Models (too large for GitHub)
+models/
+*.gguf
+*.bin
+
+# Eval results
+textvqa_results.json
+eval_results.json
